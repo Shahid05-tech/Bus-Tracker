@@ -1,0 +1,81 @@
+Build a real-time local bus tracker app using Firebase (Realtime Database / Firestore) and Replit as the development environment.
+
+Core Requirements:
+
+Database Integration (Firebase):
+
+Store bus information: bus ID, route, timings, and current bus stand.
+
+Store route details: bus stops, connectivity, and schedules.
+
+Store GPS locations of buses in real time (updated from the tracker installed in the buses).
+
+GPS & Real-Time Tracking:
+
+Each bus should send live GPS coordinates (latitude, longitude) to Firebase.
+
+The app should fetch these locations in real-time and display moving bus icons on a map.
+
+User Input:
+
+User enters current location and destination.
+
+Use Google Maps Places API for location autocomplete and validation.
+
+Bus Suggestions:
+
+If a direct bus exists for the given route, show bus number(s), expected arrival time, and route details.
+
+If no direct bus, suggest connecting buses (e.g., current location → intermediate stop → destination) by checking the database.
+
+Use estimated arrival times based on bus speed and distance from the nearest bus stand.
+
+Google Maps API:
+
+Fetch place names and verify route mapping.
+
+Display buses and routes on the map.
+
+Frontend Design:
+
+Minimal black, white, and grey theme.
+
+Show:
+
+Input fields (current location, destination).
+
+Suggested bus list with timings and stops.
+
+Map with live bus positions (icons moving in real time).
+
+Responsive and clean layout.
+
+Tech Stack:
+
+Frontend: HTML, CSS (black/white/grey theme), JavaScript (React optional).
+
+Backend: Firebase for authentication, real-time database, and hosting.
+
+APIs: Google Maps Places API + Google Maps Directions API.
+
+Features:
+
+Live bus tracking on the map.
+
+Route search with bus options.
+
+Real-time updates when bus positions or timings change.
+
+Connecting bus suggestion if no direct bus is available.
+
+Deliverables:
+
+Full working code (frontend + backend).
+
+Firebase integration setup (database schema for buses, routes, GPS).
+
+Google Maps API integration.
+
+Minimal UI (black, white, grey theme).
+
+Deployment-ready on Replit + Firebase Hosting.
